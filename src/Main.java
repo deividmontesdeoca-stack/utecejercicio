@@ -1,17 +1,31 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
-            String productito = "Pollo";
-            int Stock = 4;
-            double precio = 0.2;
-            boolean disponible = true;
-            if(Stock <= 0  ){
-                disponible = false;
-            }
-            System.out.printf(" El nombre del producto es" + productito+ "Esta disponible "+(disponible?  "si":"no")
-            +" el precio es" +precio+ " su stock es "+Stock);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Tu nombre es : ");
+        String nombre = sc.nextLine();
+        System.out.println("Tu edad es :");
+        int edad = sc.nextInt();
+        System.out.println("Las nota es ");
+        double nota = sc.nextDouble();
+        System.out.println("Las nota es");
+        double nota1 = sc.nextDouble();
+        System.out.println("Las nota es ");
+        double nota2 = sc.nextDouble();
+        double promedio = (nota1 + nota2 +nota) / 3;
+        if(promedio>=6) {
+            System.out.println("Tu nombre es " + nombre + " tu edad es " + edad + " y estas aprobado");
+        }else if(promedio <=0){
+            System.out.println("Sos horrible");
+        }else {
+            System.out.println("Tu nombre es "+nombre+" tu edad es " +edad + " y estas desaprobado");
+
         }
+        System.out.println();
+    }
 
     }

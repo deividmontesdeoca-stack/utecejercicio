@@ -2,27 +2,16 @@ import java.util.Scanner;
 
 public class producto {
     public static  void  main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Tu nombre es : ");
-        String nombre = sc.nextLine();
-        System.out.println("Tu edad es :");
-        int edad = sc.nextInt();
-        System.out.println("Las nota es ");
-    double nota = sc.nextDouble();
-        System.out.println("Las nota es");
-        double nota1 = sc.nextDouble();
-        System.out.println("Las nota es ");
-        double nota2 = sc.nextDouble();
-        double promedio = (nota1 + nota2 +nota) / 3;
-if(promedio>=6) {
-    System.out.println("Tu nombre es " + nombre + " tu edad es " + edad + " y estas aprobado");
-}else if(promedio <=0){
-    System.out.println("Sos horrible");
-}else {
-    System.out.println("Tu nombre es "+nombre+" tu edad es " +edad + " y estas desaprobado");
 
-}
-        System.out.println();
+    String productito = "Pollo";
+    int Stock = 4;
+    double precio = 0.2;
+    boolean disponible = true;
+            if(Stock <= 0  ){
+        disponible = false;
     }
+            System.out.printf("El " + productito+ " Esta disponible? "+(disponible?  "si":"no")
+            +", su precio es " +precio+ " y quedan "+Stock);
+}
 
 }
